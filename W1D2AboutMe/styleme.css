@@ -1,0 +1,29 @@
+
+body{
+    background-color: darkgray;
+    font-size: 16px;
+    margin: 25;
+    padding-left: 50px;
+}
+span{
+    color: crimson;
+    font-style: italic;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#imdbtag{
+    color: crimson;
+}
+h1,h3{
+    color : chocolate;
+}
+
+p,li{
+    color: white;
+}
+
+footer{
+    background-color:bisque;
+    padding: 20px;
+    float: right;
+}
