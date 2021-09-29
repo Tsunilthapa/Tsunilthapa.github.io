@@ -4,7 +4,7 @@ body{
     background-color: white;
     padding-left: 50px;
     color: #404040;
-    font-size: 11px;
+    font-size: 12pt;
     font-family: Georgia,Garamond,sans-serif;
     max-width: 75%;
     margin: auto;
@@ -18,7 +18,7 @@ body{
     text-decoration: underline;
     /* background-color: #F0F0F0 ; */
     font-family: Lucida Sans Unicode, Helvetica, Arial,sans-serif;
-    font-size: 22px;
+    font-size: 22pt;
     font-weight: bold;
     padding: 8px;
 }
@@ -31,7 +31,7 @@ h3{
     color: #A4A400  ;
     text-decoration: underline;
     /* background-color: #F0F0F0 ; */
-    font-size: 18px;
+    font-size: 18pt;
     font-weight: normal;
     letter-spacing: 0.25em;
 }
@@ -60,13 +60,13 @@ footer p{
     /* width: 250px; */
     text-align: right;
     margin: 0px;
-    padding: 0px;
+    padding: 0;
 }
 .validator{
     text-align: right;
 }
 .footerClass{
-    margin: 15px 0px 30px 0px;
+    margin: 15px,0,30px,0;
 }
 ul {
     list-style-image: url("../W1D2Recipie/recipeImages/pie_icon.gif");
