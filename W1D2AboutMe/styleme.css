@@ -27,3 +27,19 @@ footer{
     padding: 20px;
     float: right;
 }
+
+a:link { text-decoration: none; }
+
+
+a:visited { text-decoration: none; }
+
+
+a:hover { text-decoration: underline; }
+
+
+a:active { text-decoration: none; }
+
+h3::first-letter
+{
+	font-size: 150%
+}

@@ -1,0 +1,73 @@
+
+body{
+    background-image: url("../W1D2Recipie/recipeImages/silverware.jpg");
+    background-color: white;
+    padding-left: 50;
+    color: #404040;
+    font-size: 11;
+    font-family: Georgia,Garamond,sans-serif;
+    max-width: 75%;
+    margin: auto;
+    background-attachment: fixed;
+    background-repeat: repeat;
+}
+
+.pie h3{
+    text-align: center;
+    color: #A4A400  ;
+    text-decoration: underline;
+    /* background-color: #F0F0F0 ; */
+    font-family: Lucida Sans Unicode, Helvetica, Arial,sans-serif;
+    font-size: 22;
+    font-weight: bold;
+    padding: 8px;
+}
+
+.pie p{
+    margin: 0;
+    padding: 0;
+}
+h3{
+    color: #A4A400  ;
+    text-decoration: underline;
+    /* background-color: #F0F0F0 ; */
+    font-size: 18;
+    font-weight: normal;
+    letter-spacing: 0.25em;
+}
+
+h3 span{
+    background-color: #F0F0F0 ;
+}
+
+ .direction span{
+     font-weight: bold;
+ }
+ 
+.individual_comemnt {
+    background-color: #FFFFA8;
+     margin: 2%; 
+     font-style: italic;
+}
+.individual_comemnt span{
+    font-weight: bold;
+}
+.links a{
+    padding: 0;
+    color: #A4A400;
+}
+footer p{
+    /* width: 250px; */
+    text-align: right;
+    margin: 0;
+    padding: 0;
+}
+.validator{
+    text-align: right;
+}
+.footerClass{
+    margin: 15px,0,30px,0;
+}
+ul {
+    list-style-image: url("../W1D2Recipie/recipeImages/pie_icon.gif");
+}
