@@ -66,7 +66,7 @@ footer p{
     text-align: right;
 }
 .footerClass{
-    margin: 15px,0,30px,0;
+    margin: 15px 0 30px 0;
 }
 ul {
     list-style-image: url("../W1D2Recipie/recipeImages/pie_icon.gif");
