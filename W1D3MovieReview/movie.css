@@ -115,6 +115,15 @@ h1 {
     margin-right: 5px;
 }
 
+.validation {
+    position: fixed;
+    bottom: 2px;
+    right: 1px;
+    float: right;
+}
+.clear {
+    clear: both;
+}
 .foot p {
     background-color: #a2b964;
     padding: 4pt;
