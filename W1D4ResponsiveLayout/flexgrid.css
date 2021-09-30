@@ -1,0 +1,108 @@
+
+a{
+    text-decoration: none;
+    color: white;
+    padding: 13px 15px;
+    
+}
+
+
+
+body{
+    font-size: 14pt;
+}
+
+a{
+    text-decoration: none;
+    list-style: non;
+}
+
+li{
+    list-style: none;
+}
+
+.container {
+display: grid;
+}
+
+header{
+    grid-column: 1 span 3;
+    grid-row: 1;
+    text-align: center;
+    background-color: #ADD8E6;
+    padding: 2%;
+}
+
+nav{
+    grid-column: 1 span 3;
+    grid-row: 2;
+    text-align: left;
+    background-color: #2F4F4F;
+}
+nav ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+nav ul li{
+    border-right: 2px solid black;
+}
+nav ul li a{
+    color: white; padding: 13px 15px; display: block;
+}
+h2{
+    margin: 0;
+    padding: 0%;
+}
+
+section{
+    display: flex;
+    grid-column: 1 span 3;
+    grid-row: 3;
+    height: 300px;
+}
+
+.firstCol{
+    width: 25%;
+    background-color: #AAAAAA;
+    padding: 1%;
+}
+
+.secondCol{
+    width: 47%;
+    background-color: #BBBBBB;
+    padding: 1%;
+}
+
+.thirdCol{
+    width: 25%;
+    background-color: #CCCCCC;
+    padding: 1%;
+}
+
+footer{
+    grid-column: 1 span 3;
+    grid-row: 4;
+    text-align: center;
+    background-color: #2F4F4F;
+    padding: 2%;
+    color: white;
+}
+
+@media screen and ( max-width : 600px ) {
+    section{
+        flex-wrap: wrap;
+    }
+    section .firstCol, .thirdCol{
+        width: 46%; padding: 2%;
+    }
+    section .secondCol{
+        width: 96%; order: 3; padding: 2%;
+    }
+    header{
+        padding: 2%;
+    }
+    footer{
+        padding: 4%;
+    }
+}
