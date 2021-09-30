@@ -34,6 +34,7 @@ h1 {
 }
 
 .descriptionBlock{
+    padding: 10;
     width: 250px;
     float: right;
     margin: auto;
@@ -123,30 +124,10 @@ h1 {
 .clear {
     clear: both;
 }
-
 .foot p {
     background-color: #a2b964;
     padding: 4pt;
     text-align: center;
     border-radius: 0 0 7px 0;
     margin-top: -14px;
-}
-
-
-.validation {
-    position: fixed;
-    bottom: 2px;
-    right: 1px;
-    float: right;
-}
-
-footer{
-    text-align: center;
-    background-color: #A2B964;
-    /* border-radius: 0 0 17px 17px; */
-    padding: 4pt;
-}
-
-.clear {
-    clear: both;
 }
