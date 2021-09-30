@@ -129,3 +129,14 @@ h1 {
     right: 1px;
     float: right;
 }
+
+footer{
+    text-align: center;
+    background-color: #A2B964;
+    /* border-radius: 0 0 17px 17px; */
+    padding: 4pt;
+}
+
+.clear {
+    clear: both;
+}
