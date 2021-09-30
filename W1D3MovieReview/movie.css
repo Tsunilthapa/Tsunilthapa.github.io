@@ -122,3 +122,11 @@ h1 {
     border-radius: 0 0 7px 0;
     margin-top: -14px;
 }
+
+
+.validation {
+    position: fixed;
+    bottom: 2px;
+    right: 1px;
+    float: right;
+}
