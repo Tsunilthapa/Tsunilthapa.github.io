@@ -1,0 +1,124 @@
+body{
+    background-image: url("images/background.png");
+    font-size: 8pt;
+    font-family: Verdana,Tahoma,sans-serif ;
+    /* font-family:'Segoe UI', Verdana,Tahoma,sans-serif ; */
+    margin: 0;
+    padding: 0;
+
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 24pt;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 3px 3px #999999;
+}
+
+.banner{
+    background-image: url("images/bannerbg.png");
+    background-repeat:repeat-x;
+    margin-top: 0;
+    text-align: center;
+}
+
+.content{
+    width: 800px;
+    margin: auto;
+    border: 4px gray solid;
+    border-radius: 20px;
+    background: url("images/rbg.png") repeat-x;
+    overflow: hidden;
+}
+
+.descriptionBlock{
+    padding: 10;
+    width: 250px;
+    float: right;
+    margin: auto;
+    background-color: #A2B964 ;
+    font-size: 8pt;
+    
+}
+
+.details{
+    padding: 10pt;
+    font-size: 10pt;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.details dt {
+    font-weight: bold;
+}
+#overViewImage{
+    text-align: right;
+}
+
+.descriptionList{
+    
+    margin: 0;
+    padding: 0;
+}
+
+.details li{
+    list-style: none ;
+}
+
+
+.rottenbig {
+    width: 550px;
+    color: red;
+    font-size: 48pt;
+    font-weight: bold;
+    align-items: center;
+    /* background-image: url(); */
+}
+
+.commentBlock{
+    width: 550px;
+    /* padding: 1%; */
+}
+
+.individualComment{
+    margin-bottom: 20px;
+
+}
+
+.commentLeft, .commentRight{
+    width: 47%;
+    padding-left: 1%;
+    padding-right: 1%;
+    display: inline;
+    float: left;
+}
+.comment{
+
+    border: 2px solid gray;
+    background-color: #e8dc9b;
+    border-radius: 10px;
+    
+}
+.comment p {
+    padding: 8px;
+    margin-top: 1%;
+}
+
+.comment q {
+    font-size: 8px;
+    font-weight: bold;
+}
+
+.individualComment img{
+    float: left;
+    margin-right: 5px;
+}
+
+.foot p {
+    background-color: #a2b964;
+    padding: 4pt;
+    text-align: center;
+    border-radius: 0 0 7px 0;
+    margin-top: -14px;
+}
