@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Quiz Day 5</title>
+
+    <style>
+        form {
+            width: 500px;
+            margin: 0 auto;
+        }
+
+        fieldset {
+            display: grid;
+        }
+
+        label {
+            grid-column: 1;
+            text-align: left;
+        }
+
+        input,
+        select {
+            grid-column: 2/3;
+            border-radius: 7px;
+            margin: 5px;
+            height: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>Party Info</legend>
+            <label>First Name:</label>
+            <input type="text">
+            <label>Last Name:</label>
+            <input type="text">
+            <label>Favorite Food:</label>
+            <select>
+                <option>Pizza</option>
+                <option>Ice cream</option>
+                <option>Burger and fries</option>
+            </select>
+        </fieldset>
+    </form>
+</body>
+
+</html>
