@@ -18,7 +18,8 @@ legend {
    text-align: left;
 }
 article{
-    alignment-adjust: central;
+    align-items: center;
+    /* alignment-adjust: central; */
 }
 button{
     width: 47%;
