@@ -1,4 +1,5 @@
 window.onload = function () {
+    'use strict';
     // document.getElementById('text-area').disabled = true;
     var start = document.getElementById("start");
     var stop = document.getElementById("stop");
@@ -15,7 +16,7 @@ window.onload = function () {
             currentAnimeLength = 0;
         }
         document.getElementById('text-area').innerHTML = animationContentArray[currentAnimeLength++];
-    }
+    };
 
 
     var interval = null;
@@ -28,34 +29,34 @@ window.onload = function () {
         totalAnimeLength = animationContentArray.length;
         interval = setInterval(printAnimation, animationSpeed);
 
-    }
+    };
     stop.onclick = function () {
         stop.disabled = true;
         start.disabled = false;
         animationType.disabled = false;
         clearAnimeData();
-    }
+    };
 
     function clearAnimeData() {
         // document.getElementById('text-area').innerHTML = "";
         animationContentArray = [];
         animationSpeed = 250;
         clearInterval(interval);
-    }
+    };
 
     animationType.onchange = function () {
         showInitialText();
 
-    }
+    };
 
     function showInitialText() {
         document.getElementById('text-area').innerHTML = ANIMATIONS[animationType.value];
-    }
+    };
 
     var textFontsize = document.getElementById('fontsize');
     function fontSizeChange() {
-        document.getElementById('text-area').style.fontSize = fontsize.value;
-    }
+        document.getElementById('text-area').style.fontSize = textFontsize.value;
+    };
     textFontsize.onchange = fontSizeChange;
 
 
@@ -71,5 +72,5 @@ window.onload = function () {
             interval = setInterval(printAnimation, animationSpeed);
 
         }
-    }
+    };
 }
