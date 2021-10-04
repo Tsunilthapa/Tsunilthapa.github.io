@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form2</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="form2Style.css" />
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav id="mainNav" class="navbar navbar-expand-md navbar-dark mb-5">
+            <a class="navbar-brand" href="#">MUM Golden Dome Market ::: System</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-divider mx-4"></li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Products</a>
+                    </li>
+                    <li class="nav-divider mx-4"></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Suppliers</a>
+                    </li>
+                </ul>
+                <span class="navbar-text mr-3">Hello!</span>
+                <button class="btn btn-light my-2 my-sm-0" type="button">
+                    Sign Out
+                </button>
+            </div>
+        </nav>
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <h3>New Product Form</h3>
+                <form onsubmit="onSubmit(event);">
+                    <div class="form-row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="inputProductNumber">Product Number</label>
+                                <input type="text" class="form-control" id="inputProductNumber" />
+                            </div>
+                            <div class="form-group">
+                                <label for="inputProductName">Name</label>
+                                <input type="text" class="form-control" id="inputProductName" />
+                            </div>
+                            <div class="form-group">
+                                <label for="inputUnitPrice">Unit Price</label>
+                                <input type="number" class="form-control" id="inputUnitPrice" value="0.0" step="0.01" />
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="inputQuantity">Quantity in stock</label>
+                                <input type="number" class="form-control" id="inputQuantity" value="0" />
+                            </div>
+                            <div class="form-group">
+                                <label for="inputSupplier">Supplier:</label>
+                                <select class="form-control" id="inputSupplier">
+                                    <option value="" disabled selected>
+                                        Select a supplier
+                                    </option>
+                                    <option value="supplier1">Supplier1</option>
+                                    <option value="supplier2">Supplier2</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputSuppliedDate">Supplied Date</label>
+                                <input type="date" class="form-control" id="inputSuppliedDate"
+                                    aria-describedby="dateHelp" />
+                                <small id="dateHelp" class="form-text text-muted">Enter a valid Date.</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="offset-md-7 col-md-5">
+                            <div class="d-flex justify-content-between">
+                                <button class="btn btn-outline-secondary" type="reset">
+                                    Reset
+                                </button>
+                                <button class="btn btn-outline-danger" type="button">
+                                    Cancel
+                                </button>
+                                <button class="btn btn-outline-primary" type="submit">
+                                    Add Product
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function onSubmit(e) {
+            e.preventDefault();
+            try {
+                var productNumber = document.getElementById("inputProductNumber")
+                    .value;
+                var name = document.getElementById("inputProductName").value;
+                var unitPrice = document.getElementById("inputUnitPrice").value;
+                var quantity = document.getElementById("inputQuantity").value;
+                var supplier = document.getElementById("inputSupplier").value;
+                var suppliedDate = document.getElementById("inputSuppliedDate").value;
+
+                var str = "Form data:\n";
+                str += "Product Number : " + productNumber + "\n";
+                str += "Name           : " + name + "\n";
+                str += "Unit Price     : " + unitPrice + "\n";
+                str += "Quantity       : " + quantity + "\n";
+                str += "Supplier       : " + supplier + "\n";
+                str += "Supplied Date  : " + suppliedDate + "\n";
+                alert(str);
+            } catch (e) {
+                console.error(e);
+            }
+        }
+    </script>
+</body>
+
+</html>
