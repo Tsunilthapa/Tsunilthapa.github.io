@@ -1,0 +1,19 @@
+body{
+    margin: 0;
+    padding: 0; 
+     /* background-color: lightgray; */
+      /* border: 10px solid lightpink; */
+    /* height: 97vh; */
+}
+
+body > div{
+    width: 50px; height: 50px;
+    position: absolute; border-radius: 50%;
+}
+div{
+    opacity: 1;
+}
+
+section{
+    left: 0; bottom: 0; z-index: 999;
+}
