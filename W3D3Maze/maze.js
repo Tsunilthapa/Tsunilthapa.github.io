@@ -13,16 +13,17 @@ $(() => {
         boundaries.removeClass('youlose');
 
         boundaries.mouseover(() => beginGame ? gameLost() : '');
+
         endButton.mouseover(() => {
             if (beginGame) {
                 beginGame = false;
-                $('#status').html('Congratulations ! You have won the game. Click S to start gama again.');
+                $('#status').text('Congratulations ! You have won the game. Click S to start gama again.');
             }
         });
         let gameLost = () => {
             beginGame = false;
             boundaries.addClass('youlose');
-            $('#status').html('Sorry ! You have lost the game.');
+            $('#status').text('Sorry ! You have lost the game.');
         };
         $('#maze').mouseleave(() => beginGame ? gameLost() : '');
     });
