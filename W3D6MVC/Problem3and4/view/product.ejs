@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/product.css" />
+    <title>Product Detail</title>
+</head>
+
+<body>
+    <div class="main">
+
+        <div class="container">
+            <div class="col1">Product Name: <%=product.name %>
+            </div>
+
+            <div class="col2">
+                Description: <%=product.description %>
+            </div>
+
+            <div class="col3">Product Price: $<%=product.price %>
+            </div>
+
+
+            <div class="col4">
+                <form action="/shoppingCart" method="POST">
+                    <input type="hidden" name="name" value=" <%=product.name %>" />
+                    <input type="hidden" name="price" value=" <%=product.price %>" />
+                    <input type="submit" value="Add to Cart" />
+                </form>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
