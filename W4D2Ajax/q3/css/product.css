@@ -1,0 +1,40 @@
+
+  .main {
+    background-color: skyblue;
+  }
+  
+
+table {
+    border-bottom: 1px solid black;
+  }
+  
+  td {
+    border: 1px solid black;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-areas: "col1 col2 col3 col4";
+    border: 1px solid black;
+    text-align: center;
+    grid-template-columns: 25% 25% 25% 25%;
+  }
+  .container div {
+    padding-top: 20px;
+    border-right: 3px solid black;
+  }
+  
+  .col1 {
+    grid-area: col1;
+  }
+  .col2 {
+    grid-area: col2;
+  }
+  .col3 {
+    grid-area: col3;
+  }
+  .col4 {
+    grid-area: col4;
+  }
+  
+  

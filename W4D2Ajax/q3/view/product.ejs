@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/product.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+    <title>Product Details</title>
+</head>
+
+<body>
+
+
+    <div class="main">
+
+        <div>
+            <h3> <a id="goToCart" href="/shoppingCart">Go to Cart ( <span id=cartProdCount></span> ) </a>
+            </h3>
+            <span class="message"></span>
+        </div>
+        <div class="container">
+            <div class="col1">Product Name: <%=product.name %>
+            </div>
+
+            <div class="col2">
+                Description: <%=product.description %>
+            </div>
+
+            <div class="col3">Product Price: $<%=product.price %>
+            </div>
+
+
+            <div class="col4">
+                <form class="addToCartForm" id="addToCartForm">
+                    <input type="hidden" id="name" name="name" value=" <%=product.name %>" />
+                    <input type="hidden" id="price" name="price" value=" <%=product.price %>" />
+                    <input id="button1" type="button" value="Add To Cart" onclick="addToCart()" />
+                </form>
+
+
+
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
